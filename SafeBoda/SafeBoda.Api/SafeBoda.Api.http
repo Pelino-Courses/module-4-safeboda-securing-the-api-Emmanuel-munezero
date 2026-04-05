@@ -1,0 +1,16 @@
+#@SafeBoda.Api_HostAddress = http://localhost:5278
+@SafeBoda = http://localhost:5278
+
+GET {{SafeBoda}}/api/trips
+Accept: application/json
+
+###
+
+POST {{SafeBoda}}/api/trips/request
+Content-Type: application/json
+
+{
+  "startLocation": "Kampala Road",
+  "endLocation": "Garden City",
+  "riderId": "rider-123"
+}
